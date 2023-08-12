@@ -922,53 +922,95 @@ img {
   background-color: var(--oceancolor);
 }
 
-/* sample hw7 */
-
-/* .container {
-  min-width: 320px;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-/* .page-header {
-  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
-    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
-}
-
-.page-header .container {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.nav-menu .contacts-menu .navigation {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-} */
-
 /* Viewport for Tablet*/
 
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
+  .menu-toggle {
+    display: none;
+  }
+
   .container {
     width: 768px;
+    padding: 0 16px;
   }
-  .menu {
+
+  .nav-menu {
+    margin-left: 120px;
+  }
+
+  .logo-link {
+    display: flex;
+  }
+
+  .contacts-menu {
+    flex-direction: column;
+    margin-left: 28px;
+    align-items: stretch;
+  }
+
+  .contacts-menu .item:not(:last-child) {
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .benefits .item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .benefits .icon {
     display: none;
+  }
+
+  .team {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .container .partners {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 96px 10px;
+    width: 100%;
+  }
+
+  .section.no-top-padding .container {
+    display: none;
+  }
+
+  .partners .item {
+    width: calc((100% - 150px) / 3);
+  }
+
+  .footer {
+    gap: 72px 0;
+    justify-content: flex-start;
+    padding-left: 108px;
+  }
+
+  .footer .footer-block {
+    margin-left: 24px;
+  }
+
+  .footer .footer-subscribe {
+    margin-left: 0;
   }
 }
 
 /* Viewport for Mobile*/
+
 @media (max-width: 767px) {
   .container {
-    width: 768px;
+    width: 428px;
   }
-  .menu-toggle {
-    display: none;
+
+  .hero {
+    width: 100%;
   }
 }

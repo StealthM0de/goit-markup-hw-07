@@ -1012,6 +1012,10 @@ img {
     width: 100%;
   }
 
+  .menu-toggle {
+    display: none;
+  }
+
   .benefits .item {
     flex-basis: calc(100% / 1 - 30px);
     margin-top: 30px;

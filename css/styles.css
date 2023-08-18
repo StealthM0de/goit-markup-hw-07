@@ -1185,7 +1185,7 @@ img {
   }
 
   .partners .item {
-    width: calc((100% - 150px) / 1);
+    width: calc((100% - 150px) / 1.5);
   }
 
   .footer-form {

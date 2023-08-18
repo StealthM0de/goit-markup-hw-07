@@ -1116,6 +1116,12 @@ img {
     color: var(--iriscolor);
   }
 
+  .modal-close:hover,
+  .modal-close:focus {
+    color: var(--navyblue);
+    background-color: var(--oceancolor);
+  }
+
   /* .menu-container .modal-close:hover,
   .menu-container .modal-close:focus, */
   .menu-container .nav-menu:hover,

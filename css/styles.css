@@ -51,6 +51,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 /*checked*/
 .link {
@@ -278,6 +279,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  gap: 24px;
 }
 /*checked*/
 .filters .space + .space {
@@ -641,7 +643,7 @@ img {
 
 .footer-form {
   display: inline-flex;
-  gap: 24px;
+  gap: 16px;
 }
 
 .form-input:placeholder-shown {
@@ -743,7 +745,7 @@ img {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: var(--whitecolor);
+  color: var(--navyblue);
   background-color: var(--oceancolor);
 }
 
@@ -953,7 +955,7 @@ img {
 }
 
 .modal-close.js-close-menu {
-  background-color: var(--cornflower);
+  background-color: var(--whitecolor);
 }
 
 /* Viewport for Tablet*/
@@ -981,6 +983,7 @@ img {
 
   .contacts-menu .contact {
     padding: 0;
+    font-weight: 500;
   }
 
   .contacts-menu .item:not(:last-child) {
@@ -998,8 +1001,29 @@ img {
     margin-left: 30px;
   }
 
+  .benefits .title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
+  .benefits .description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
+
   .benefits .icon {
     display: none;
+  }
+
+  .social-team {
+    margin: 0 16px;
   }
 
   .break {
@@ -1050,7 +1074,7 @@ img {
 
 @media (max-width: 767px) {
   .container {
-    width: 428px;
+    width: 320px;
     padding: 0 16px;
     /* width: 100%; */
   }
@@ -1077,18 +1101,19 @@ img {
   .menu-mobile .social-footer {
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 56px;
+    gap: 30px;
     margin-top: 48px;
     padding-top: 0;
   }
 
   .menu-mobile .contact.active {
-    font-size: 36px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    color: var(--iriscolor);
   }
 
   /* .menu-container .modal-close:hover,
@@ -1100,13 +1125,18 @@ img {
     color: var(--iriscolor);
   }
 
-  /* .menu-toggle {
-    display: none;
-  } */
-
   .menu .nav-menu,
   .menu .contacts-menu {
     display: none;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
   }
 
   .benefits .item {
@@ -1115,13 +1145,33 @@ img {
     margin-left: 30px;
   }
 
+  .benefits {
+    gap: 72px;
+  }
+
   .benefits .title {
     text-align: center;
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
+  .social-team {
+    margin: 0 16px;
   }
 
   .benefits .description {
     text-align: left;
-    /* margin-left: 80px; */
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
   }
 
   .break {
@@ -1129,7 +1179,7 @@ img {
   }
 
   .partners .item {
-    width: calc((100% - 150px) / 1.5);
+    width: calc((100% - 150px) / 1);
   }
 
   .footer-form {
@@ -1186,6 +1236,7 @@ img {
   .filters {
     /* display: flex; */
     flex-wrap: wrap;
+    gap: 24px;
   }
 
   .project-card {
@@ -1196,6 +1247,7 @@ img {
 
   .projects {
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
@@ -1204,14 +1256,29 @@ img {
 @media (max-width: 767px) {
   .filters {
     justify-content: flex-start;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 48px;
   }
 
   .projects .project-card {
     flex-basis: auto;
   }
 
+  .project-card {
+    margin-top: 0;
+  }
+
   .projects {
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+  }
+  .filters .space + .space {
+    margin-left: 0;
+  }
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 }

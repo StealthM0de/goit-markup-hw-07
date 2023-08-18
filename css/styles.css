@@ -745,7 +745,7 @@ img {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: var(--navyblue);
+  color: var(--whitecolor);
   background-color: var(--oceancolor);
 }
 

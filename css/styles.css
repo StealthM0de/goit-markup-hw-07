@@ -235,6 +235,8 @@ img {
     (min-resolution: 2dppx) {
     background-image: url(../images/bg-hero-d@2x.jpg);
   } */
+
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*checked*/
@@ -937,9 +939,9 @@ img {
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
-  /* display: flex;
-  flex-direction: column;
-  align-content: space-between; */
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
@@ -966,7 +968,7 @@ img {
 
 /* Viewport for Tablet*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .container {
     width: 768px;
     padding: 0 16px;
@@ -984,6 +986,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/bg-hero-t.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1101,7 +1104,7 @@ img {
 
 /* Viewport for Mobile 428-767*/
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .container {
     width: 428px;
     padding: 0 16px;
@@ -1491,7 +1494,7 @@ img {
 
 /*viewport for MOBILE PORTFOLIO*/
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .filters {
     justify-content: flex-start;
     display: flex;
@@ -1518,5 +1521,12 @@ img {
   .section {
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu .nav-menu,
+  .menu .contacts-menu {
+    display: none;
   }
 }

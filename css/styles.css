@@ -225,13 +225,16 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-hero.jpg);
+    url(../images/bg-hero-d.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  /* max-width: 1600px;
-  margin: 0, auto; */
+  /* @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bg-hero-d@2x.jpg);
+  } */
 }
 
 /*checked*/
@@ -963,10 +966,33 @@ img {
 
 /* Viewport for Tablet*/
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .container {
     width: 768px;
     padding: 0 16px;
+  }
+
+  .hero {
+    padding: 200px 0;
+    text-align: center;
+
+    background-color: var(--navyblue);
+
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-hero-t.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-hero-t@2x.jpg);
+    } */
   }
 
   .nav-menu {
@@ -1080,6 +1106,29 @@ img {
     width: 428px;
     padding: 0 16px;
     /* width: 100%; */
+  }
+
+  .hero {
+    padding: 200px 0;
+    text-align: center;
+
+    background-color: var(--navyblue);
+
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-hero-m.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-hero-m@2x.jpg);
+    } */
   }
 
   .container.menu {

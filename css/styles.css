@@ -1425,6 +1425,10 @@ img {
     margin: 0 16px;
   }
 
+  .team .item {
+    margin-left: 0;
+  }
+
   .benefits .description {
     text-align: left;
 

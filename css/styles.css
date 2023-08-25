@@ -1010,15 +1010,14 @@ img {
 
   .contacts-menu {
     flex-direction: column;
-    margin-left: 28px;
     align-items: stretch;
     gap: 12px;
   }
 
   .contacts-menu .contact {
     padding: 0;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 12px;
   }
 
   .contacts-menu .item:not(:last-child) {
@@ -1028,6 +1027,10 @@ img {
 
   .hero {
     width: 100%;
+  }
+
+  .benefits {
+    row-gap: 42px;
   }
 
   .benefits .item {
@@ -1099,6 +1102,14 @@ img {
   }
 
   .footer .footer-block {
+    margin-left: 24px;
+  }
+
+  .footer .footer-address {
+    padding-left: 0;
+  }
+
+  .logo-link .footer .footer-block {
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -1237,6 +1248,11 @@ img {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+  }
+
+  .team .item {
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .social-team {

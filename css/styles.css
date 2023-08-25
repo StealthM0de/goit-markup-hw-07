@@ -1109,6 +1109,10 @@ img {
     padding-left: 0;
   }
 
+  .logo-link.footer {
+    padding-left: 0;
+  }
+
   .logo-link .footer .footer-block {
     margin-left: 0;
     margin-bottom: 0;
